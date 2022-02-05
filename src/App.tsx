@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { LANG_ES } from "./lang/es";
+import Home from "./routes/Home";
 
 function App() {
-  return <div className="App"></div>;
+  const [lang, setLang] = useState(LANG_ES);
+  return (
+    <div className="App">
+      <Home lang={lang} />
+    </div>
+  );
 }
 
 export default App;
