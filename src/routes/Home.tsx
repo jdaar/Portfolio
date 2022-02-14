@@ -1,11 +1,10 @@
 import React from "react";
 import Hero from "../components/Hero";
-import { Lang } from "../lang/lang";
 
-export default function Home({ lang }: { lang: Lang }) {
+export default function Home() {
   return (
     <div>
-      <Hero lang={lang} />
+      <Hero />
     </div>
   );
 }
