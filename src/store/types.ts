@@ -5,8 +5,3 @@ export type RootState = {
   lang: Lang;
   theme: Theme;
 };
-
-export enum AVAILABLE_LANG {
-  ES = "ES",
-  EN = "EN",
-}
