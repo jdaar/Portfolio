@@ -10,6 +10,13 @@ export interface Lang {
   Home: {
     Hero: {
       Subtitle: string;
+      Links: {
+        Projects: string;
+        AboutMe: string;
+      };
+    };
+    AboutMe: {
+      WorkInProgress: string;
     };
   };
 }

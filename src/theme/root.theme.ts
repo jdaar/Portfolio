@@ -8,6 +8,10 @@ export enum AVAILABLE_THEME {
 
 export type Theme = {
   background: string;
+  secondary_background: string;
+  detail_color: string;
+  primary_color: string;
+  secondary_color: string;
 };
 
 export const themes: { [key in AVAILABLE_THEME]: Theme } = {
