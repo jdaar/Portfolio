@@ -94,7 +94,7 @@ export default function Hero() {
         `)}
         >
           <a
-            href="#placeholder"
+            href="https://github.com/jdaar"
             css={css(`
               color: ${theme.secondary_color};
               text-decoration: none;
@@ -103,7 +103,7 @@ export default function Hero() {
             {lang.Home.Hero.Links.Projects}
           </a>
           <a
-            href="#placeholder"
+            href="https://www.linkedin.com/in/jasprilla/"
             css={css(`
               color: ${theme.secondary_color};
               text-decoration: none;

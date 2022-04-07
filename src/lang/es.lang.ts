@@ -6,7 +6,7 @@ export const LANG_ES: Lang = {
       Subtitle: "Desarrollador",
       Links: {
         Projects: "Mis proyectos",
-        AboutMe: "Sobre mi",
+        AboutMe: "LinkedIn",
       },
     },
     AboutMe: {

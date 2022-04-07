@@ -50,7 +50,7 @@ export default function AboutMe() {
         color: ${theme.secondary_color}
       `)}
       >
-        <h1>{lang.Home.AboutMe.WorkInProgress}</h1>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScK-ft-0ERwFDtKvvgeYBLuHMph97kWp7uKad8nq_hrR72Zgg/viewform" width="800" height="2000" css={css(`margin-bottom: 100px; border-radius: 10px; border: none;`)}>Cargando…</iframe>
       </div>
     </div>
   );
