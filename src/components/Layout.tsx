@@ -5,7 +5,11 @@ import { RootState } from "../store/types";
 import { Theme } from "../theme/root.theme";
 import { css, Global } from "@emotion/react";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}): React.ReactElement {
   const theme: Theme = useSelector((state: RootState) => state.theme);
 
   return (

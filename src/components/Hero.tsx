@@ -9,12 +9,12 @@ import { AVAILABLE_THEME, Theme, themes } from "../theme/root.theme";
 import { css } from "@emotion/react";
 import React from "react";
 
-export default function Hero() {
+export default function Hero(): React.ReactElement {
   const lang: Lang = useSelector((state: RootState) => state.lang);
   const theme: Theme = useSelector((state: RootState) => state.theme);
   const dispatch = useDispatch();
 
-  const switchLanguage = (e: React.MouseEvent) => {
+  const switchLanguage = (e: React.MouseEvent): void => {
     dispatch(
       SET_LANG(
         lang === langs[AVAILABLE_LANG.ES]
@@ -24,7 +24,7 @@ export default function Hero() {
     );
   };
 
-  const switchTheme = (e: React.MouseEvent) => {
+  const switchTheme = (e: React.MouseEvent): void => {
     dispatch(
       SET_THEME(
         theme === themes[AVAILABLE_THEME.DARK]

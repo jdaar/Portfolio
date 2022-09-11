@@ -4,10 +4,8 @@ import { useSelector } from "react-redux";
 import { RootState } from "../store/types";
 import { Theme } from "../theme/root.theme";
 import { css } from "@emotion/react";
-import { Lang } from "../lang/root.lang";
 
-export default function AboutMe() {
-  const lang: Lang = useSelector((state: RootState) => state.lang);
+export default function AboutMe(): React.ReactElement {
   const theme: Theme = useSelector((state: RootState) => state.theme);
 
   return (
@@ -50,7 +48,14 @@ export default function AboutMe() {
         color: ${theme.secondary_color}
       `)}
       >
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScK-ft-0ERwFDtKvvgeYBLuHMph97kWp7uKad8nq_hrR72Zgg/viewform" width="800" height="2000" css={css(`margin-bottom: 100px; border-radius: 10px; border: none;`)}>Cargando…</iframe>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScK-ft-0ERwFDtKvvgeYBLuHMph97kWp7uKad8nq_hrR72Zgg/viewform"
+          width="800"
+          height="2000"
+          css={css(`margin-bottom: 100px; border-radius: 10px; border: none;`)}
+        >
+          Cargando…
+        </iframe>
       </div>
     </div>
   );

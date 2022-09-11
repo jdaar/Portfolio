@@ -6,13 +6,13 @@ export enum AVAILABLE_THEME {
   LIGHT = "LIGHT",
 }
 
-export type Theme = {
+export interface Theme {
   background: string;
   secondary_background: string;
   detail_color: string;
   primary_color: string;
   secondary_color: string;
-};
+}
 
 export const themes: { [key in AVAILABLE_THEME]: Theme } = {
   DARK: THEME_DARK,

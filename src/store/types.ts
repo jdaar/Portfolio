@@ -1,7 +1,7 @@
 import { Lang } from "../lang/root.lang";
 import { Theme } from "../theme/root.theme";
 
-export type RootState = {
+export interface RootState {
   lang: Lang;
   theme: Theme;
-};
+}
